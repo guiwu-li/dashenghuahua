@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm create next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git 2>&1)",
+      "Bash(npm install -g pnpm 2>&1 | tail -5)",
+      "Bash(which node && node --version && which npm && npm --version && which npx && npx --version 2>&1)",
+      "Bash(sudo npm install -g pnpm 2>&1 | tail -5)",
+      "Bash(corepack enable 2>&1 && corepack prepare pnpm@latest --activate 2>&1)",
+      "Bash(npm install -g pnpm --prefix ~/.local)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\" && pnpm --version)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\" && pnpm create next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git 2>&1)",
+      "Bash(rm -rf /tmp/nextjs-init && mkdir -p /tmp/nextjs-init && export PATH=\"$HOME/.local/bin:$PATH\" && echo \"n\" | pnpm create next-app@latest /tmp/nextjs-init --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git 2>&1)",
+      "Bash(printf \"n\\\\n\" | /Users/guiwu/.local/bin/pnpm create next-app@latest /tmp/nextjs-init --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git 2>&1)",
+      "Bash(cp -r /tmp/nextjs-init/. /Users/guiwu/claude/dashuahuahuade-haizi/ && ls /Users/guiwu/claude/dashuahuahuade-haizi/)",
+      "Bash(/Users/guiwu/.local/bin/pnpm add framer-motion 2>&1)",
+      "Bash(/Users/guiwu/.local/bin/pnpm build 2>&1)",
+      "Bash(/Users/guiwu/.local/bin/pnpm lint 2>&1)",
+      "Bash(git init && git add . && git commit -m \"$\\(cat <<'EOF'\nfeat: init Next.js 16 project with Tailwind 4 & Framer Motion\n\n- Next.js 16.1.6 \\(App Router\\) + React 19 + TypeScript\n- Tailwind CSS 4 with brand design tokens via @theme\n- Framer Motion 12 for scroll-triggered animations\n- Full homepage skeleton: Navbar, Hero, WhyUs, CourseSystem,\n  TeachingMethod, Gallery, Teachers, Pricing, Reviews, FAQ,\n  Footer, StickyBar\n- Registration Modal with form \\(parent name, phone, child age\\)\n- lib/constants.ts with brand colors and all copy strings\n- pnpm build + lint pass cleanly\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" 2>&1)"
+    ]
+  }
+}
